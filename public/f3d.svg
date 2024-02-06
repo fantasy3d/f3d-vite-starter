@@ -1,0 +1,24 @@
+<svg width="512" height="512" xmlns="http://www.w3.org/2000/svg">
+  <!-- 定义蓝绿渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00BFFF"/>
+      <stop offset="100%" stop-color="#00FFB0"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 绘制背景正方形 -->
+  <rect width="512" height="512" rx="90" ry="90" fill="url(#bgGradient)"/>
+  
+  <!-- 引用Sirin Stencil字体 -->
+  <style>
+    @font-face {
+      font-family: 'Sirin Stencil';
+      src: url('https://fonts.gstatic.com/s/sirinstencil/v6/mem4YaWwznmLx-lzGfN7MdRyRc9MAQ.woff') format('woff2');
+      font-weight: bold;
+    }
+  </style>
+  
+  <!-- 计算F的位置和尺寸，使其效果类似于ChatGPT logo -->
+  <text x="256" y="256" text-anchor="middle" alignment-baseline="middle" font-family="Sirin Stencil" font-weight="bold" fill="white" font-size="512" dy="0.1em">F</text>
+</svg>
