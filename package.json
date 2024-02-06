@@ -6,17 +6,20 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "clean": "rimraf dist"
   },
   "devDependencies": {
     "@tweakpane/core": "^2.0.3",
-    "@types/three": "^0.161.2",
+    "@types/three": "^0.160.0",
+    "rimraf": "^5.0.5",
     "typescript": "^5.2.2",
     "vite": "^5.0.8"
   },
   "dependencies": {
     "@fantasy3d/addons": "^0.1.0",
     "@fantasy3d/core": "^0.1.0",
+    "three": "^0.160.0",
     "tweakpane": "^4.0.3"
   }
 }
