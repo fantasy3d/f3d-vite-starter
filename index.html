@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <title>F3D Vite Starter</title>
+    <style>
+      html {
+        height: 100%;
+      }
+  
+      body {
+        font-family: Monospace;
+        font-weight: bold;
+        margin: 0px;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      #gui_container {
+				position: absolute;
+				top: 1%;
+				left: 45%;
+			}
+    </style>
+  </head>
+  <body>
+    <div id="gui_container"></div>
+    <div id="viewport" style="width:100%; height:100%;"></div>
+    <script defer type="module" src="/src/app.ts"></script>
+  </body>
+</html>
