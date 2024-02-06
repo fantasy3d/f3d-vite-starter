@@ -117,17 +117,17 @@
   resolved "https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.19.12.tgz#c57c8afbb4054a3ab8317591a0b7320360b444ae"
   integrity sha512-T1QyPSDCyMXaO3pzBkF96E8xMkiRYbUEZADd29SyPGabqxMViNoii+NcK7eWJAEoU6RZyEm5lVSIjTmcdoB9HA==
 
-"@fantasy3d/addons@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.npmjs.org/@fantasy3d/addons/-/addons-0.1.0.tgz#58286fb2128dc45bb400cc34469fd0d106638e41"
-  integrity sha512-2LgB8lJGqRDcMgrOhnG1joC8/Y4JMJhGZxnvfYPOyHKbkN1aXzHZ3ODed6qy8F7HPliAqiN09dW68KudRdCACA==
+"@fantasy3d/addons@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.npmjs.org/@fantasy3d/addons/-/addons-0.1.1.tgz#d4fa4047c9c0c0376ea8a20b211f14e2b93804fa"
+  integrity sha512-2lhVH7eRJ+acrNJhRKpsGO/PDgWfe/XNGRtvkeKoeDb2Q2HvbUrYtN6DAJlJzy2XMiu3mhQCKSgB9eoAAQCVFg==
   dependencies:
     troika-three-text "^0.49.0"
 
-"@fantasy3d/core@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.npmjs.org/@fantasy3d/core/-/core-0.1.0.tgz#45d6b9a725a1b33105559b52b601029da7a1dc4c"
-  integrity sha512-VUMwaIAq4TJsLQzU5fphk66sZWxQKi2SEGHPWW1bs5g0Luz/XWCecyclWut20SwJAbmX/uD00EM7wVZfDcXKHw==
+"@fantasy3d/core@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.npmjs.org/@fantasy3d/core/-/core-0.1.1.tgz#cd1fbda2b04415171574c4ebdbabc133bdd450bf"
+  integrity sha512-n3eunKQr7YqL24/rRX3E1f2jj8+XD6nzUcRwarjBKidhDcvgPqZjE9SdzNR0CQDfAqm248/jcv6tgu3YbWs1yg==
 
 "@isaacs/cliui@^8.0.2":
   version "8.0.2"
@@ -226,10 +226,10 @@
   resolved "https://registry.npmjs.org/@types/stats.js/-/stats.js-0.17.3.tgz#705446e12ce0fad618557dd88236f51148b7a935"
   integrity sha512-pXNfAD3KHOdif9EQXZ9deK82HVNaXP5ZIF5RP2QG6OQFNTaY2YIetfrE9t528vEreGQvEPRDDc8muaoYeK0SxQ==
 
-"@types/three@^0.160.0":
-  version "0.160.0"
-  resolved "https://registry.npmjs.org/@types/three/-/three-0.160.0.tgz#7915a97e0a14ccaa9ccbb9f190c5730b04a23075"
-  integrity sha512-jWlbUBovicUKaOYxzgkLlhkiEQJkhCVvg4W2IYD2trqD2om3VK4DGLpHH5zQHNr7RweZK/5re/4IVhbhvxbV9w==
+"@types/three@^0.161.2":
+  version "0.161.2"
+  resolved "https://registry.npmjs.org/@types/three/-/three-0.161.2.tgz#3c7e3f40869ad52970f517583cc200472e8918bf"
+  integrity sha512-DazpZ+cIfBzbW/p0zm6G8CS03HBMd748A3R1ZOXHpqaXZLv2I5zNgQUrRG//UfJ6zYFp2cUoCQaOLaz8ubH07w==
   dependencies:
     "@types/stats.js" "*"
     "@types/webxr" "*"
@@ -506,6 +506,7 @@ source-map-js@^1.0.2:
   integrity sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==
 
 "string-width-cjs@npm:string-width@^4.2.0", string-width@^4.1.0:
+  name string-width-cjs
   version "4.2.3"
   resolved "https://registry.npmjs.org/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
@@ -524,6 +525,7 @@ string-width@^5.0.1, string-width@^5.1.2:
     strip-ansi "^7.0.1"
 
 "strip-ansi-cjs@npm:strip-ansi@^6.0.1", strip-ansi@^6.0.0, strip-ansi@^6.0.1:
+  name strip-ansi-cjs
   version "6.0.1"
   resolved "https://registry.npmjs.org/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
   integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
@@ -537,10 +539,10 @@ strip-ansi@^7.0.1:
   dependencies:
     ansi-regex "^6.0.1"
 
-three@^0.160.0:
-  version "0.160.1"
-  resolved "https://registry.npmjs.org/three/-/three-0.160.1.tgz#61fe2907312e8604b1f64187f58e047503847413"
-  integrity sha512-Bgl2wPJypDOZ1stAxwfWAcJ0WQf7QzlptsxkjYiURPz+n5k4RBDLsq+6f9Y75TYxn6aHLcWz+JNmwTOXWrQTBQ==
+three@^0.161.0:
+  version "0.161.0"
+  resolved "https://registry.npmjs.org/three/-/three-0.161.0.tgz#38aafaa82fe5467fde2e33933515d1b6beb17d91"
+  integrity sha512-LC28VFtjbOyEu5b93K0bNRLw1rQlMJ85lilKsYj6dgTu+7i17W+JCCEbvrpmNHF1F3NAUqDSWq50UD7w9H2xQw==
 
 troika-three-text@^0.49.0:
   version "0.49.0"
