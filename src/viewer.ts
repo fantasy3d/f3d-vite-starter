@@ -1,6 +1,6 @@
 import { Pane } from 'tweakpane';
 import { BoxGeometry, Euler, Mesh, MeshLambertMaterial, Vector3 } from 'three';
-import { AmbientLight, DirectionalLight, Engine, Entity, MeshRenderer, Scene, SceneRenderer } from "@fantasy3d/core";
+import { AmbientLight, DirectionalLight, Engine, MeshRenderer, Scene, SceneRenderer } from "@fantasy3d/core";
 import { OrbitController } from '@fantasy3d/addons';
 
 /**
@@ -19,30 +19,10 @@ export class Viewer {
     // Scene
     scene: Scene;
 
-    // Camera
-    camera: Entity;
-
     // Pane
     pane: Pane;
 
     constructor() {
-
-        // Initizlize
-        this._initialize();
-        // Create rendering entities
-        this._createRenderingEntities(); 
-
-    }
-
-    // private functions
-
-    /**
-     * Initialize
-     *
-     * @private
-     * @memberof Viewer
-     */
-    private _initialize(): void {
 
         // Create pane
         this.pane = new Pane( { title: 'options', expanded: false } );
@@ -59,18 +39,35 @@ export class Viewer {
             }
 
         } );
+        
+        // Create Scene
+        this._createScene();
+
+    }
+
+    // private functions
+
+    /**
+     * Create Scene
+     *
+     * @private
+     * @memberof Viewer
+     */
+    private _createScene(): void {
+
+        const { engine } = this;
 
         // Create Scene
-        this.scene = new Scene( this.engine );
+        this.scene = new Scene( engine );
 
         // Create Scene Renderer
-        this.scene.sceneRenderer = new SceneRenderer( this.engine );
+        this.scene.sceneRenderer = new SceneRenderer( engine );
 
         // Active Scene
         this.scene.isActive = true;
 
         // Create a PerspectiveCamera
-        this.camera = this.scene.createPerspectiveCamera( {
+        const camera = this.scene.createPerspectiveCamera( {
 
             transform: {
 
@@ -83,17 +80,7 @@ export class Viewer {
         } );
 
         // @ts-ignore Add OrbitController for camera
-        this.camera.addComponent( OrbitController, { damping: true } );
-
-    }
-
-    /**
-     * Create rendering entities
-     *
-     * @private
-     * @memberof Viewer
-     */
-    private _createRenderingEntities(): void {
+        camera.addComponent( OrbitController, { damping: true } );
 
         const { rootEntity } = this.scene;
 
@@ -131,7 +118,7 @@ export class Viewer {
 
             )
 
-        } );
+        } );        
 
     }
 
