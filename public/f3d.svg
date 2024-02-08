@@ -1,13 +1,13 @@
 <svg width="512" height="512" xmlns="http://www.w3.org/2000/svg">
-  <!-- 定义鲜亮渐变 -->
+  <!-- 定义蓝绿渐变 -->
   <defs>
-    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FF5F6D"/>
-      <stop offset="100%" stop-color="#FFC371"/>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3793FF"/>
+      <stop offset="100%" stop-color="#0017E4"/>
     </linearGradient>
   </defs>
   
-  <!-- 绘制背景正方形，填充颜色为渐变背景 -->
+  <!-- 绘制背景正方形 -->
   <rect width="512" height="512" rx="90" ry="90" fill="url(#bgGradient)"/>
   
   <!-- 引用MV Boli字体 -->
